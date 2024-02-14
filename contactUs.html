@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="style/assets/logo2.png" type="image/x-icon">
+  <title>Contact ERamen</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+    rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo"><img src="style/assets/logo.png" alt="logo"></a>
+
+    <div class="navbar-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="promotion.html">Promotion</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="contactUs.html">Contact Us</a>
+    </div>
+
+    <div class="hamburger-btn">
+      <span>&#9776</span>
+    </div>
+  </nav>
+  <!-- Body -->
+  <section class="section2" id="contactUs_height">
+    <div class="contactUs_atas">
+      <h1 class="contactUs_title">Contact Us</h1>
+      <p class="contactUs_description">Get in touch with us and tell us about what you're got in mind</p>
+    </div>
+    <div class="contactUs_bawah">
+      <div class="contactUs_kiri">
+        <div class="contactUs_kiri_card">
+          <img src="style/assets/location.png" alt="location">
+          <div class="contactUs_kiri_card_text">
+            <h2>Address</h2>
+            <p>15, Tosiga V, L Block, West Jakarta</p>
+          </div>
+        </div>
+        <div class="contactUs_kiri_card">
+          <img src="style/assets/phone.png" alt="phone">
+          <div class="contactUs_kiri_card_text">
+            <h2>Phone</h2>
+            <p>123-456-789-012</p>
+          </div>
+        </div>
+        <div class="contactUs_kiri_card">
+          <img src="style/assets/email.png" alt="email">
+          <div class="contactUs_kiri_card_text">
+            <h2>Email</h2>
+            <p>eramen@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contactUs_kanan"></div>
+      <!-- Form -->
+      <form onsubmit="return validasi()">
+        <div class="button_wrapper">
+          <h1>Send Message</h1>
+          <div class="form_card">
+            <h2>Full Name</h2>
+            <input id="input_username" type="text" placeholder="Input your name . . .">
+            <br>
+            <span id="span_username"></span>
+          </div>
+          <div class="form_card">
+            <h2>Email</h2>
+            <input id="input_email" type="text" placeholder="Input your email . . .">
+            <br>
+            <span id="span_email"></span>
+          </div>
+          <div class="form_card">
+            <h2>Phone Number</h2>
+            <input id="input_phoneNum" type="text" placeholder="Input your phone number . . .">
+            <br>
+            <span id="span_phoneNum"></span>
+          </div>
+          <div class="form_card">
+            <h2>Preferences</h2>
+            <select name="preferences" id="input_preferences">
+              <option id="no_input_preferences">Select your preference</option>
+              <option value="ramen">Ramen</option>
+              <option value="dryRamen">Dry Ramen</option>
+            </select>
+            <br>
+            <span id="span_preferences"></span>
+          </div>
+          <div class="form_card">
+            <input type="checkbox" id="input_checkbox" name="receive">
+            <label for="input_checkbox">I agree to receive newsletter in the future</label>
+            <br>
+            <span id="span_checkbox"></span>
+          </div>
+          <button class="submit_button"type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="sosmed">
+      <a href="https://twitter.com" target="_blank">
+        <img src="style/assets/twitter.png" alt="twitter">
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="style/assets/facebook.png" alt="facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="style/assets/instagram.png" alt="instagram">
+      </a>
+    </div>
+    <p>Copyright © 2023. ERamen. All Rights Reserved</p>
+  </footer>
+  <!-- JavaScript -->
+  <script src="style/script.js"></script>
+  <script src="style/button.js  "></script>
+</body>
+
+</html>

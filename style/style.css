@@ -1,0 +1,916 @@
+:root {
+  --warna1: #fdc029;
+  --warna2: #aa3d01;
+  --warna3: #171717;
+  --warna4: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Labrada", serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--warna3);
+  color: var(--warna4);
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--warna4);
+  padding: 2rem 7%;
+  position: fixed;
+  border-bottom: 1px solid #bababa;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 15rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav a {
+  display: inline-block;
+  color: var(--warna3);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+
+.navbar-nav a:hover {
+  color: var(--warna1);
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid var(--warna1);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.8);
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+/* Index/Home */
+
+.home_card {
+  display: flex;
+  padding: 0 3rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+#promotion_banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.7)), url(assets/promotion_banner_background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#promotion_banner img {
+  filter: brightness(85%);
+  width: 35rem;
+}
+
+#promotion_banner p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.home_card a:hover {
+  box-shadow: 0 0 10px var(--warna4);
+  transition: 0.15s ease-in-out;
+}
+
+#home_card2 {
+  background-color: var(--warna2);
+}
+
+.home_card_text {
+  flex: 1;
+}
+
+#home_card_text2 {
+  text-align: right;
+}
+
+#home_card3 img {
+  width: 35rem;
+}
+
+.promotion_banner_text h1 {
+  color: var(--warna1);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.promotion_banner_text p {
+  margin-top: 3rem;
+
+}
+
+.promotion_banner_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_card_text h2 {
+  color: var(--warna1);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.home_card_text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home_card_text p {
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+
+.view_btn {
+  color: var(--warna4);
+  display: inline-block;
+  background-color: var(--warna1);
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.order_btn {
+  color: var(--warna4);
+  display: inline-block;
+  background-color: var(--warna1);
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.home_card_img img {
+  max-width: 100%;
+}
+
+.home_card_img {
+  flex: 1;
+}
+
+/* Products */
+
+.section1 {
+  margin-top: 6rem;
+}
+
+.section2 {
+  margin-top: 6rem;
+}
+
+.menu_cards img {
+  width: 20rem;
+}
+
+.menu_cards {
+  display: flex;
+  align-items: center;
+  padding: 3rem 15%;
+  gap: 3rem;
+}
+
+.menu_cards .menu_name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--warna1);
+}
+
+.menu_cards .menu_description {
+  font-size: 1.2rem;
+}
+
+/* Promotion */
+
+#promo_page {
+  display: flex;
+  background-color: var(--warna3);
+}
+
+.promo_left {
+  background-color: var(--warna1);
+  width: 40%;
+  margin: 1rem 0 1rem 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo_left h1 {
+  font-size: 280%;
+}
+
+.promo_left h2 {
+  font-size: 150%;
+  margin: 2rem;
+  background-color: var(--warna2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.span_day {
+  color: var(--warna1);
+}
+
+.partners {
+  margin: 0 2rem 2rem;
+  border-radius: 2rem;
+  background-color: var(--warna4);
+}
+
+.promo_left #grabfood,
+#gofood {
+  width: 5rem;
+  margin: 2rem;
+}
+
+.promo_left #shopeefood {
+  width: 9rem;
+}
+
+.promo_right {
+  margin: 3rem;
+  width: 55%;
+  display: flex;
+  align-items: center;
+}
+
+.promo_right img {
+  width: 100%;
+}
+
+.promo_right_responsive {
+  display: none;
+}
+
+/* About Us */
+
+.section1 h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.about_title {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--warna2);
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.about-img img {
+  max-width: 100%;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Contact Us */
+
+.contactUs_bawah {
+  display: flex;
+}
+
+.contactUs_kiri {
+  width: 50%;
+}
+
+.contactUs_atas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.contactUs_title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--warna2);
+}
+
+.contactUs_description {
+  margin-bottom: 1rem;
+  color: var(--warna4);
+  font-size: 1.2rem;
+}
+
+.contactUs_kiri_card {
+  margin: 2rem 0 3rem 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contactUs_kiri_card_text h2 {
+  color: var(--warna1);
+}
+
+.contactUs_kiri_card img {
+  width: 6rem;
+  background-color: var(--warna4);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.contactUs_kiri_card_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUs_kiri_card_text {
+  padding: 1rem;
+}
+
+form {
+  background-color: var(--warna4);
+  color: var(--warna3);
+  padding: 3rem;
+  width: 480px;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+form h1 {
+  text-align: center;
+  color: var(--warna2);
+  margin-bottom: 2rem;
+}
+
+input[type=text] {
+  height: 40px;
+  width: 100%;
+  background-color: var(--warna1);
+  border-radius: 0.2rem;
+  padding: 0 13px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: var(--warna4);
+}
+
+.form_card {
+  margin-top: 1rem;
+}
+
+.form_card h2 {
+  font-size: 1rem;
+}
+
+.form_card select {
+  height: 40px;
+  width: 100%;
+  background-color: var(--warna1);
+  color: var(--warna4);
+  border-radius: 0.2rem;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+option {
+  color: var(--warna3);
+}
+
+.submit_button {
+  color: var(--warna4);
+  display: inline-block;
+  background-color: var(--warna1);
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: var(--warna2);
+  color: var(--warna3);
+  transition: ease-in-out 0.2s;
+}
+
+.button_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_card span {
+  color: red;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--warna4);
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .sosmed img {
+  width: 2rem;
+}
+
+footer .sosmed {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer p {
+  padding: 0.5rem 0;
+  color: var(--warna3);
+}
+
+/* Media Screen */
+
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hamburger-btn {
+    display: inline-block;
+    color: #171717;
+    font-size: 2.5rem;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 120vh;
+    width: 40%;
+    background-color: var(--warna2);
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar-nav a {
+    padding: 2rem;
+    font-weight: 600;
+  }
+
+  .navbar-nav a::after {
+    transform-origin: 0 0;
+    width: 6rem;
+  }
+
+  /* Home */
+
+  .home_card img {
+    width: 25rem;
+  }
+
+  .home_card h1{
+    font-size: 3rem;
+  }
+
+  .home_card_img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home_card {
+    justify-content: center;
+  }
+
+  .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .about-img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .menu_cards {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo_left {
+    justify-content: start;
+  }
+
+  .promo_left h1 {
+    margin-top: 2rem;
+  }
+
+  .promo_right {
+    display: none;
+  }
+
+  .promo_right_responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 2rem;
+    width: 50%;
+  }
+
+  #group2 {
+    width: 95%;
+  }
+
+  .contactUs_bawah {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contactUs_kiri {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactUs_kiri_card_text {
+    width: 10rem;
+  }
+}
+
+/* Mobile Devices */
+
+
+@media (max-width: 426px) {
+  html {
+    font-size: 55%;
+  }
+
+  .section2 {
+    height: 180vh;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 110vh;
+    width: 40%;
+    background-color: var(--warna2);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar-nav a {
+    padding: 2rem;
+    font-weight: 600;
+  }
+
+  .navbar-nav a::after {
+    transform-origin: 0 0;
+    width: 6rem;
+  }
+
+  /* Home */
+
+  .home_card h1 {
+    font-size: 3rem;
+  }
+
+  .home_card h2 {
+    margin-top: 2rem;
+  }
+
+  #promotion_banner img {
+    width: 25rem;
+  }
+
+  .home_card {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home_card_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home_card_text h2,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  .order_btn {
+    margin-top: 3rem;
+  }
+
+  .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .home_card_img {
+    position: absolute;
+    width: 75%;
+    height: 40%;
+    margin-top: 30rem;
+  }
+
+  .home_card_img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  #home_card_text2 {
+    margin-top: 2rem;
+  }
+
+  .menu_cards {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #promo_page {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .promo_left {
+    justify-content: start;
+    width: 80%;
+    margin: 2rem;
+  }
+
+  .promo_left h1 {
+    margin-top: 2rem;
+  }
+
+  .promo_right {
+    display: none;
+  }
+
+  .promo_right_responsive {
+    display: inline-block;
+    margin: 1rem 0 1rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  #contactUs_height{
+    height: auto;
+  }
+
+  .contactUs_bawah {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .contactUs_kiri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactUs_kiri_card_text p {
+    text-align: left;
+    width: 300%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 55%;
+  }
+
+  .section2 {
+    height: 180vh;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 110vh;
+    width: 40%;
+    background-color: var(--warna2);
+    border-left: 1px solid black;
+    display: flex;
+    border-left: 1px solid black;
+    justify-content: start;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar-nav a {
+    padding: 2rem;
+    font-weight: 600;
+  }
+
+  .navbar-nav a::after {
+    transform-origin: 0 0;
+    width: 6rem;
+  }
+
+  /* Home */
+
+  .home_card h2 {
+    margin-top: 2rem;
+  }
+
+  #promotion_banner img {
+    width: 25rem;
+  }
+
+  .home_card {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home_card_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home_card_text h2,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  .order_btn {
+    margin-top: 2rem;
+  }
+
+  .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .home_card_img {
+    position: absolute;
+    width: 75%;
+    /* height: 100%; */
+    margin-top: 30rem;
+  }
+
+  .home_card_img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  #home_card_text2 {
+    margin-top: 2rem;
+  }
+
+  .menu_cards {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #promo_page {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .promo_left {
+    justify-content: start;
+    width: 80%;
+    margin: 2rem;
+  }
+
+  .promo_left h1 {
+    margin-top: 2rem;
+  }
+
+  .promo_right {
+    display: none;
+  }
+
+  .promo_right_responsive {
+    display: inline-block;
+    margin: 1rem 0 1rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .contactUs_bawah {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  #contactUs_height{
+    height: auto;
+  }
+
+  .contactUs_kiri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactUs_kiri_card_text p {
+    text-align: left;
+    width: 300%;
+  }
+}
